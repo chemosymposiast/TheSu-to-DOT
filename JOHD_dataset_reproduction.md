@@ -1,6 +1,6 @@
 # Reproducing the JOHD dataset visualisations
 
-Each visualisation has a matching ready-to-use preset. The simplest way to reproduce it is to swap in the preset (delete the current `settings_user.toml`, copy the preset into the script root, rename it `settings_user.toml`), then run the script. The TOML settings listed under each visualisation below are what the preset already contains — you only need to set them manually if you prefer to edit `settings_user.toml` directly or want to customise beyond the preset.
+Each visualisation of the JOHD lead white dataset (on which see below) can be replicated through a matching ready-to-use preset included in this repository. The simplest way to reproduce each of them is to swap in the preset (delete the current `settings_user.toml`, copy the preset into the script root, rename it `settings_user.toml`), then run the script. The TOML settings listed under each visualisation below are what the preset already contains — you only need to set them manually if you prefer to edit `settings_user.toml` directly or want to customise beyond the preset.
 
 ## Context and provenance
 
