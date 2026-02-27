@@ -1,0 +1,89 @@
+# =============================================================================
+# Preset: 6a.KLL.recipe-Thphr.recipe-Diosc.recipe (DDHI-2024 JOHD dataset)
+# =============================================================================
+# NEATO layout centred on KLL 2010 thesis. Copy to settings_user.toml to use.
+# Output: ancient-lead-white_JOHD.* in _thesu_outputs/6a.KLL.recipe-Thphr.recipe-Diosc.recipe/
+# =============================================================================
+
+[paths]
+base_dir = "_thesu_inputs"
+output_dir = "_thesu_outputs/6a.KLL.recipe-Thphr.recipe-Diosc.recipe"
+xml_name = "ancient-lead-white_JOHD"
+output_basename = "ancient-lead-white_JOHD"
+
+[filters]
+sources_to_select = ["katsaros_liritzis_laskaris_2010"]
+filter_propositions = false
+filter_matching_proposition_sequences = false
+filter_all_sequences = false
+filter_extrinsic_elements = false
+thesis_focus_id = ["katsaros_liritzis_laskaris_2010.T124253"]
+elements_to_exclude = []
+
+[filters.custom_propositions]
+
+[filters.custom_sequences]
+
+[layout]
+default_engine = "neato"
+
+[layout.neato]
+overlap = "prism"
+splines = "spline"
+nodesep = 0.1
+outputorder = "nodesfirst"
+concentrate = "true"
+K = 0.3
+sep = 0.05
+maxiter = 1500
+mode = "sgd"
+model = "shortpath"
+
+[output]
+output_svg = true
+output_pdf = true
+output_png = true
+open_in_browser = true
+
+[output.pdf]
+size = "11.7,16.5"
+dpi = 300
+
+[output.png]
+size = "11.7,16.5"
+dpi = 1400
+max_warning_mb = 20
+
+[system]
+graphviz_path = ""
+
+[colors]
+darkgray = "tan"
+silver = "darkseagreen"
+lightslategray = "darkolivegreen"
+cornflowerblue = "steelblue"
+lavender = "lightsteelblue"
+gainsboro = "mediumaquamarine"
+lightgray = "mediumaquamarine"
+lightgrey = "mediumaquamarine"
+honeydew = "palegreen"
+
+[layout.dot]
+overlap = "scalexy"
+splines = "ortho"
+nodesep = 0.25
+ranksep = 0.30
+outputorder = "edgesfirst"
+concentrate = "false"
+newrank = "true"
+
+[layout.fdp]
+overlap = "prism"
+splines = "spline"
+nodesep = 0.10
+outputorder = "edgesfirst"
+concentrate = "true"
+K = 0.5
+sep = 0.2
+maxiter = 2000
+start = "regular"

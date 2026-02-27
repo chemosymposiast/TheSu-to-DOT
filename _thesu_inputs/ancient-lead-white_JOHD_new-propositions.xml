@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="css/TheSu/TheSu.css"?>
+
+<newPropositions xmlns="http://alchemeast.eu/thesu/ns/1.0"
+        xmlns:thesu="http://alchemeast.eu/thesu/ns/1.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://alchemeast.eu/thesu/ns/1.0 schema/TheSu.xsd"
+        xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <PROPOSITION xml:id="tlg0093_tlg004.P151115">
+                <propositionType>
+                        <macroThemesGroup>
+                                <macroTheme
+                                        thesu:macroThemeTag="./meta/ancient-lead-white_JOHD_indexing-tags.xml#methodological"
+                                />
+                        </macroThemesGroup>
+                        <microThemesGroup>
+                                <microTheme
+                                        thesu:microThemeTag="./meta/ancient-lead-white_JOHD_indexing-tags.xml#chemistry"/>
+                                <microTheme
+                                        thesu:microThemeTag="./meta/ancient-lead-white_JOHD_indexing-tags.xml#metallurgy"/>
+                                <microTheme
+                                        thesu:microThemeTag="./meta/ancient-lead-white_JOHD_indexing-tags.xml#mineralogy"
+                                />
+                        </microThemesGroup>
+                        <keywordsGroup>
+                                <keywordRef
+                                        thesu:namely="./meta/ancient-lead-white_JOHD_indexing-tags.xml#lead"
+                                        thesu:wordsInParaphrasis="9,17,28"/>
+                                <keywordRef thesu:focus="2" thesu:wordsInParaphrasis="11"
+                                        thesu:namely="./meta/ancient-lead-white_JOHD_indexing-tags.xml#vinegar"/>
+                                <keywordRef thesu:focus="3" thesu:wordsInParaphrasis="14,23"
+                                        thesu:namely="./meta/ancient-lead-white_JOHD_indexing-tags.xml#jar"/>
+                                <keywordRef thesu:wordsInParaphrasis="3-4,61-62"
+                                        thesu:namely="./meta/ancient-lead-white_JOHD_indexing-tags.xml#lead-white"
+                                />
+                        </keywordsGroup>
+                        <definition/>
+                        <sequencesGroup>
+                                <sequence xml:id="tlg0093_tlg004.Q151116">
+                                        <phasesGroup>
+                                                <newPhases>
+                                                  <phase>
+                                                  <microThemedFreeText>
+                                                  <freeText>Place a piece of lead over vinegar in closed jars</freeText>
+                                                  </microThemedFreeText>
+                                                  <objectsGroup>
+                                                  <object xml:id="tlg0093_tlg004.O151115">
+                                                  <keywordSubRef thesu:keywordsInSequence="1"/>
+                                                  <objectFunction thesu:ingredient="true"/>
+                                                  </object>
+                                                  <object xml:id="tlg0093_tlg004.O151116">
+                                                  <keywordSubRef thesu:keywordsInSequence="2"/>
+                                                  <objectFunction thesu:ingredient="true"/>
+                                                  </object>
+                                                  <object xml:id="tlg0093_tlg004.O151117">
+                                                  <keywordSubRef thesu:keywordsInSequence="3"/>
+                                                  <objectQuantity thesu:unspecifiedPlurality="true"/>
+                                                  <objectFunction thesu:instrument="true"/>
+                                                  </object>
+                                                  </objectsGroup>
+                                                  </phase>
+                                                  <phase>
+                                                  <microThemedFreeText>
+                                                  <freeText>Wait for lead to acquire thickness</freeText>
+                                                  </microThemedFreeText>
+                                                  <objectsGroup>
+                                                  <object xml:id="tlg0093_tlg004.O151118">
+                                                  <objectRef thesu:ref="#tlg0093_tlg004.O151115"/>
+                                                  <productOf thesu:phasesRef="1.1"/>
+                                                  </object>
+                                                  <object xml:id="tlg0093_tlg004.O151119"
+                                                  thesu:implicit="true">
+                                                  <objectRef thesu:ref="#tlg0093_tlg004.O151116"/>
+                                                  </object>
+                                                  <object xml:id="tlg0093_tlg004.O151110"
+                                                  thesu:implicit="true">
+                                                  <objectRef thesu:ref="#tlg0093_tlg004.O151117"/>
+                                                  </object>
+                                                  </objectsGroup>
+                                                  </phase>
+                                                  <phase>
+                                                  <microThemedFreeText>
+                                                  <freeText>Open the jars</freeText>
+                                                  </microThemedFreeText>
+                                                  <objectsGroup>
+                                                  <object xml:id="tlg0093_tlg004.O151111"
+                                                  thesu:implicit="true">
+                                                  <objectRef thesu:ref="#tlg0093_tlg004.O151118"/>
+                                                  <paraphrasis>lead after acquiring
+                                                  thickness</paraphrasis>
+                                                  <productOf thesu:phasesRef="1.2">
+                                                  <productType thesu:transformation="true"/>
+                                                  </productOf>
+                                                  </object>
+                                                  </objectsGroup>
+                                                  </phase>
+                                                  <phase>
+                                                  <microThemedFreeText>
+                                                  <freeText>Scrape away from the lead the substance that has formed on its surface, repeating this until you have consumed it completely</freeText>
+                                                  </microThemedFreeText>
+                                                  <phaseTemporality>
+                                                  <phaseRepetition>
+                                                  <relativeEnd>
+                                                  <fullyThemedFreeText>
+                                                  <freeText>until you have consumed it completely</freeText>
+                                                  </fullyThemedFreeText>
+                                                  </relativeEnd>
+                                                  </phaseRepetition>
+                                                  </phaseTemporality>
+                                                  <objectsGroup>
+                                                  <object xml:id="tlg0093_tlg004.O151112">
+                                                  <objectRef thesu:ref="#tlg0093_tlg004.O151111"/>
+                                                  </object>
+                                                  <object xml:id="tlg0093_tlg004.O151113">
+                                                  <microThemedFreeText>
+                                                  <freeText>the substance that has formed on its surface</freeText>
+                                                  </microThemedFreeText>
+                                                  <paraphrasis>the substance that has formed on
+                                                  lead's surface</paraphrasis>
+                                                  <productOf thesu:phasesRef="1.2">
+                                                  <fromMultipleObjects>
+                                                  <objectRef thesu:ref="#tlg0093_tlg004.O151111"/>
+                                                  </fromMultipleObjects>
+                                                  <productType thesu:portion="true"/>
+                                                  </productOf>
+                                                  <objectFunction thesu:ingredient="true"/>
+                                                  </object>
+                                                  </objectsGroup>
+                                                  </phase>
+                                                  <phase>
+                                                  <microThemedFreeText>
+                                                  <freeText>Grind what you have scraped away</freeText>
+                                                  </microThemedFreeText>
+                                                  <objectsGroup>
+                                                  <object xml:id="tlg0093_tlg004.O151114">
+                                                  <objectRef thesu:ref="#tlg0093_tlg004.O151113"/>
+                                                  <paraphrasis>the substance that formed on lead's
+                                                  surface after being scraped away from
+                                                  it</paraphrasis>
+                                                  <productOf thesu:phasesRef="1.4"/>
+                                                  </object>
+                                                  </objectsGroup>
+                                                  </phase>
+                                                  <phase>
+                                                  <microThemedFreeText>
+                                                  <freeText>Filter off what you are grinding</freeText>
+                                                  </microThemedFreeText>
+                                                  <objectsGroup>
+                                                  <object xml:id="tlg0093_tlg004.O151120">
+                                                  <objectRef thesu:ref="#tlg0093_tlg004.O151114"/>
+                                                  <paraphrasis>the subastance that formed on lead's
+                                                  surface after being scraped away from it and
+                                                  ground</paraphrasis>
+                                                  <productOf thesu:phasesRef="1.5"/>
+                                                  </object>
+                                                  </objectsGroup>
+                                                  </phase>
+                                                  <phase>
+                                                  <microThemedFreeText>
+                                                  <freeText>The final precipitate is lead white</freeText>
+                                                  </microThemedFreeText>
+                                                  <objectsGroup>
+                                                  <object xml:id="tlg0093_tlg004.O151121">
+                                                  <keywordSubRef thesu:keywordsInSequence="4"/>
+                                                  <paraphrasis>the subastance that formed on lead's
+                                                  surface after being scraped away from it, ground,
+                                                  and filtered off</paraphrasis>
+                                                  <productOf thesu:phasesRef="1.6">
+                                                  <fromMultipleObjects>
+                                                  <objectRef thesu:ref="#tlg0093_tlg004.O221025"/>
+                                                  </fromMultipleObjects>
+                                                  <productType thesu:portion="true"/>
+                                                  </productOf>
+                                                  </object>
+                                                  </objectsGroup>
+                                                  <containsPurpose thesu:value="true"/>
+                                                  </phase>
+                                                </newPhases>
+                                        </phasesGroup>
+                                </sequence>
+                        </sequencesGroup>
+                        <etiologiesGroup/>
+                        <analogiesGroup/>
+                </propositionType>
+                <paraphrasis>{Theophrastus recipe} To produce lead white: . Place a piece of lead
+                        over vinegar in closed jars, .Wait for lead to acquire thickness .Open the
+                        jars, .Scrape away from the lead the substance that has formed on its
+                        surface, repeating this until you have consumed it completely, .Grind what
+                        you have scraped away, .Filter off what you are grinding, .The final
+                        precipitate is lead white</paraphrasis>
+        </PROPOSITION>
+        <PROPOSITION xml:id="tlg0656_tlg001.P213927">
+                <propositionType>
+                        <macroThemesGroup>
+                                <macroTheme
+                                        thesu:macroThemeTag="./meta/ancient-lead-white_JOHD_indexing-tags.xml#methodological"
+                                />
+                        </macroThemesGroup>
+                        <microThemesGroup>
+                                <microTheme
+                                        thesu:microThemeTag="./meta/ancient-lead-white_JOHD_indexing-tags.xml#chemistry"/>
+                                <microTheme
+                                        thesu:microThemeTag="./meta/ancient-lead-white_JOHD_indexing-tags.xml#metallurgy"/>
+                                <microTheme
+                                        thesu:microThemeTag="./meta/ancient-lead-white_JOHD_indexing-tags.xml#mineralogy"
+                                />
+                        </microThemesGroup>
+                        <keywordsGroup>
+                                <keywordRef thesu:wordsInParaphrasis="6-7,110-111,154-155"
+                                        thesu:namely="./meta/ancient-lead-white_JOHD_indexing-tags.xml#lead-white"/>
+                                <keywordRef thesu:focus="3" thesu:wordsInParaphrasis="24,44"
+                                        thesu:namely="./meta/ancient-lead-white_JOHD_indexing-tags.xml#jar"/>
+                                <keywordRef thesu:focus="5" thesu:wordsInParaphrasis="20"
+                                        thesu:namely="./meta/ancient-lead-white_JOHD_indexing-tags.xml#pungent"/>
+                                <keywordRef thesu:focus="2" thesu:wordsInParaphrasis="21"
+                                        thesu:namely="./meta/ancient-lead-white_JOHD_indexing-tags.xml#vinegar"/>
+                                <keywordRef thesu:focus="2" thesu:wordsInParaphrasis="29,52"
+                                        thesu:namely="./meta/ancient-lead-white_JOHD_indexing-tags.xml#lead"/>
+                                <keywordRef thesu:wordsInParaphrasis="32,35,59"
+                                        thesu:namely="./meta/ancient-lead-white_JOHD_indexing-tags.xml#lattice"/>
+                                <keywordRef thesu:focus="2" thesu:wordsInParaphrasis="71"
+                                        thesu:namely="./meta/ancient-lead-white_JOHD_indexing-tags.xml#vinegar"/>
+                                <keywordRef thesu:focus="3" thesu:wordsInParaphrasis="64"
+                                        thesu:namely="./meta/ancient-lead-white_JOHD_indexing-tags.xml#fluid_n"/>
+                                <keywordRef thesu:focus="3" thesu:wordsInParaphrasis="76,82"
+                                        thesu:namely="./meta/ancient-lead-white_JOHD_indexing-tags.xml#fluid_n"/>
+                                <keywordRef thesu:focus="4" thesu:wordsInParaphrasis="75,82"
+                                        thesu:namely="./meta/ancient-lead-white_JOHD_indexing-tags.xml#viscous"
+                                        thesu:subject="9"/>
+                                <keywordRef thesu:focus="3" thesu:wordsInParaphrasis="79"
+                                        thesu:namely="./meta/ancient-lead-white_JOHD_indexing-tags.xml#vessel"/>
+                                <keywordRef thesu:focus="3" thesu:wordsInParaphrasis="87"
+                                        thesu:namely="./meta/ancient-lead-white_JOHD_indexing-tags.xml#sun"
+                                />
+                        </keywordsGroup>
+                        <definition/>
+                        <sequencesGroup>
+                                <sequence xml:id="tlg0656_tlg001.Q213928">
+                                        <phasesGroup>
+                                                <newPhases>
+                                                  <phase>
+                                                  <microThemedFreeText>
+                                                  <freeText>Pour most pungent vinegar into a jar</freeText>
+                                                  </microThemedFreeText>
+                                                  <objectsGroup>
+                                                  <object xml:id="tlg0656_tlg001.O213927">
+                                                  <microThemedFreeText>
+                                                  <freeText>most pungent vinegar</freeText>
+                                                  </microThemedFreeText>
+                                                  <paraphrasis>most pungent vinegar</paraphrasis>
+                                                  <objectFunction thesu:ingredient="true"/>
+                                                  </object>
+                                                  <object xml:id="tlg0656_tlg001.O213928">
+                                                  <microThemedFreeText>
+                                                  <freeText>jar</freeText>
+                                                  </microThemedFreeText>
+                                                  <paraphrasis>jar</paraphrasis>
+                                                  <objectFunction thesu:instrument="true"/>
+                                                  </object>
+                                                  </objectsGroup>
+                                                  </phase>
+                                                  <phase>
+                                                  <microThemedFreeText>
+                                                  <freeText>Place a piece of lead on a lattice</freeText>
+                                                  </microThemedFreeText>
+                                                  <objectsGroup>
+                                                  <object xml:id="tlg0656_tlg001.O213929">
+                                                  <keywordSubRef thesu:keywordsInSequence="5"/>
+                                                  <paraphrasis>piece of lead</paraphrasis>
+                                                  <objectFunction thesu:ingredient="true"/>
+                                                  </object>
+                                                  <object xml:id="tlg0656_tlg001.O213930">
+                                                  <keywordSubRef thesu:keywordsInSequence="6"/>
+                                                  <objectFunction thesu:instrument="true"/>
+                                                  </object>
+                                                  </objectsGroup>
+                                                  </phase>
+                                                  <phase>
+                                                  <microThemedFreeText>
+                                                  <freeText>Lay the lattice with the lead onto the mouth of the jar</freeText>
+                                                  </microThemedFreeText>
+                                                  <objectsGroup>
+                                                  <object xml:id="tlg0656_tlg001.O213931">
+                                                  <microThemedFreeText>
+                                                  <freeText>the lattice with the lead</freeText>
+                                                  </microThemedFreeText>
+                                                  <paraphrasis>the lattice with the piece of
+                                                  lead</paraphrasis>
+                                                  <productOf thesu:phasesRef="1.2">
+                                                  <fromMultipleObjects>
+                                                  <objectRef thesu:ref="#tlg0656_tlg001.O213929"/>
+                                                  <objectRef thesu:ref="#tlg0656_tlg001.O213930"/>
+                                                  </fromMultipleObjects>
+                                                  <productType thesu:combination="true"/>
+                                                  </productOf>
+                                                  </object>
+                                                  <object xml:id="tlg0656_tlg001.O213932">
+                                                  <microThemedFreeText>
+                                                  <freeText>mouth of the jar</freeText>
+                                                  </microThemedFreeText>
+                                                  <paraphrasis>the mouth of the jar</paraphrasis>
+                                                  <relativeTo>
+                                                  <objectRef thesu:ref="#tlg0656_tlg001.O213928"/>
+                                                  </relativeTo>
+                                                  <objectFunction thesu:instrument="true"/>
+                                                  </object>
+                                                  </objectsGroup>
+                                                  </phase>
+                                                  <phase>
+                                                  <microThemedFreeText>
+                                                  <freeText>Above, throw over covers</freeText>
+                                                  </microThemedFreeText>
+                                                  <objectsGroup>
+                                                  <object xml:id="tlg0656_tlg001.O213933">
+                                                  <microThemedFreeText>
+                                                  <freeText>Lay the lattice with the lead onto the mouth of the jar</freeText>
+                                                  </microThemedFreeText>
+                                                  <paraphrasis>the mouth of the jar with the lattice
+                                                  with the leaden brick</paraphrasis>
+                                                  <productOf thesu:phasesRef="1.3">
+                                                  <fromMultipleObjects>
+                                                  <objectRef thesu:ref="#tlg0656_tlg001.O213931"/>
+                                                  <objectRef thesu:ref="#tlg0656_tlg001.O213932"/>
+                                                  </fromMultipleObjects>
+                                                  <productType thesu:combination="true"/>
+                                                  </productOf>
+                                                  </object>
+                                                  <object xml:id="tlg0656_tlg001.O213934">
+                                                  <microThemedFreeText>
+                                                  <freeText>covers</freeText>
+                                                  </microThemedFreeText>
+                                                  <paraphrasis>cover</paraphrasis>
+                                                  <objectQuantity thesu:unspecifiedPlurality="true"/>
+                                                  <objectFunction thesu:instrument="true"/>
+                                                  </object>
+                                                  </objectsGroup>
+                                                  </phase>
+                                                  <phase>
+                                                  <microThemedFreeText>
+                                                  <freeText>Wait until the lead, crumbling down, has strained through the lattice</freeText>
+                                                  </microThemedFreeText>
+                                                  <objectsGroup>
+                                                  <object xml:id="tlg0656_tlg001.O213935">
+                                                  <microThemedFreeText>
+                                                  <freeText>Lay the lattice with the lead onto the mouth of the jar, .Above, throw over covers</freeText>
+                                                  </microThemedFreeText>
+                                                  <paraphrasis>the jar with the vinegar inside it
+                                                  and the lattice with the piece of lead onto its
+                                                  mouth, after having been covered</paraphrasis>
+                                                  <productOf thesu:phasesRef="1.1,1.4">
+                                                  <fromMultipleObjects>
+                                                  <objectRef thesu:ref="#tlg0656_tlg001.O213933"/>
+                                                  <objectRef thesu:ref="#tlg0656_tlg001.O213934"/>
+                                                  </fromMultipleObjects>
+                                                  <productType thesu:combination="true"/>
+                                                  </productOf>
+                                                  </object>
+                                                  </objectsGroup>
+                                                  </phase>
+                                                  <phase>
+                                                  <microThemedFreeText>
+                                                  <freeText>Decant away the clean fluid that floats on top of the vinegar</freeText>
+                                                  </microThemedFreeText>
+                                                  <objectsGroup>
+                                                  <object xml:id="tlg0656_tlg001.O213936">
+                                                  <microThemedFreeText>
+                                                  <freeText>the lead, crumbling down, has strained through the lattice […] the vinegar</freeText>
+                                                  </microThemedFreeText>
+                                                  <paraphrasis>the vinegar after the piece of lead
+                                                  has cumbled down in it</paraphrasis>
+                                                  <productOf thesu:phasesRef="1.5">
+                                                  <fromMultipleObjects>
+                                                  <objectRef thesu:ref="#tlg0656_tlg001.O213927"/>
+                                                  <objectRef thesu:ref="#tlg0656_tlg001.O213929"/>
+                                                  </fromMultipleObjects>
+                                                  <productType thesu:combination="true"
+                                                  thesu:transformation="true"/>
+                                                  </productOf>
+                                                  <objectFunction thesu:ingredient="true"/>
+                                                  </object>
+                                                  <object xml:id="tlg0656_tlg001.O213937">
+                                                  <microThemedFreeText>
+                                                  <freeText>the clean fluid that floats on top</freeText>
+                                                  </microThemedFreeText>
+                                                  <paraphrasis>the clean fluid that floats on
+                                                  top</paraphrasis>
+                                                  <productOf thesu:phasesRef="1.5">
+                                                  <fromMultipleObjects>
+                                                  <objectRef thesu:ref="#tlg0656_tlg001.O213936"/>
+                                                  </fromMultipleObjects>
+                                                  <productType thesu:portion="true"/>
+                                                  </productOf>
+                                                  <objectFunction thesu:ingredient="false"
+                                                  thesu:instrument="false"/>
+                                                  </object>
+                                                  </objectsGroup>
+                                                  </phase>
+                                                  <phase>
+                                                  <microThemedFreeText>
+                                                  <freeText>Pour the remaining viscous fluid into a vessel</freeText>
+                                                  </microThemedFreeText>
+                                                  <objectsGroup>
+                                                  <object xml:id="tlg0656_tlg001.O213938">
+                                                  <microThemedFreeText>
+                                                  <freeText>the remaining viscous fluid</freeText>
+                                                  </microThemedFreeText>
+                                                  <paraphrasis>the viscous fluid that remains after
+                                                  the clean fluid floating on top has been decanted
+                                                  away</paraphrasis>
+                                                  <productOf thesu:phasesRef="1.6">
+                                                  <fromMultipleObjects>
+                                                  <objectRef thesu:ref="#tlg0656_tlg001.O213936"/>
+                                                  </fromMultipleObjects>
+                                                  <productType thesu:portion="true"/>
+                                                  </productOf>
+                                                  <objectFunction thesu:ingredient="true"/>
+                                                  </object>
+                                                  <object xml:id="tlg0656_tlg001.O213939">
+                                                  <keywordSubRef thesu:keywordsInSequence="11"/>
+                                                  <objectFunction thesu:instrument="true"/>
+                                                  </object>
+                                                  </objectsGroup>
+                                                  </phase>
+                                                  <phase>
+                                                  <microThemedFreeText>
+                                                  <freeText>Let the viscous fluid dry under the sun</freeText>
+                                                  </microThemedFreeText>
+                                                  <objectsGroup>
+                                                  <object xml:id="tlg0656_tlg001.O213940">
+                                                  <microThemedFreeText>
+                                                  <freeText>Pour the remaining viscous fluid into a vessel</freeText>
+                                                  </microThemedFreeText>
+                                                  <paraphrasis>the viscous fluid after having been
+                                                  poured into a vessel</paraphrasis>
+                                                  <productOf thesu:phasesRef="1.7">
+                                                  <fromMultipleObjects>
+                                                  <objectRef thesu:ref="#tlg0656_tlg001.O213938"/>
+                                                  <objectRef thesu:ref="#tlg0656_tlg001.O133657"/>
+                                                  </fromMultipleObjects>
+                                                  <productType thesu:combination="true"/>
+                                                  </productOf>
+                                                  </object>
+                                                  <object xml:id="tlg0656_tlg001.O213941">
+                                                  <keywordSubRef thesu:keywordsInSequence="12"/>
+                                                  <objectFunction thesu:instrument="true"/>
+                                                  </object>
+                                                  </objectsGroup>
+                                                  </phase>
+                                                  <phase>
+                                                  <microThemedFreeText>
+                                                  <freeText>Grind the dried substance</freeText>
+                                                  </microThemedFreeText>
+                                                  <objectsGroup>
+                                                  <object xml:id="tlg0656_tlg001.O213942">
+                                                  <objectRef thesu:ref="#tlg0656_tlg001.O213940"/>
+                                                  <paraphrasis>what is originally a viscous fluid,
+                                                  after having been poured into a vessel and dried
+                                                  under the sun</paraphrasis>
+                                                  <productOf thesu:phasesRef="1.8">
+                                                  <productType thesu:transformation="true"/>
+                                                  </productOf>
+                                                  <objectFunction thesu:ingredient="true"/>
+                                                  </object>
+                                                  </objectsGroup>
+                                                  </phase>
+                                                  <phase>
+                                                  <microThemedFreeText>
+                                                  <freeText>Sift the ground substance</freeText>
+                                                  </microThemedFreeText>
+                                                  <objectsGroup>
+                                                  <object xml:id="tlg0656_tlg001.O213943">
+                                                  <objectRef thesu:ref="#tlg0656_tlg001.O213942"/>
+                                                  <paraphrasis>the ground substance</paraphrasis>
+                                                  <productOf thesu:phasesRef="1.9"/>
+                                                  <objectFunction thesu:ingredient="true"/>
+                                                  </object>
+                                                  </objectsGroup>
+                                                  </phase>
+                                                  <phase>
+                                                  <microThemedFreeText>
+                                                  <freeText>The substance that is sifted away is the better variety of white and effective lead white</freeText>
+                                                  </microThemedFreeText>
+                                                  <objectsGroup>
+                                                  <object xml:id="tlg0656_tlg001.O213944">
+                                                  <microThemedFreeText>
+                                                  <freeText>the better variety of white and effective lead white</freeText>
+                                                  </microThemedFreeText>
+                                                  <paraphrasis>the better variety of white and
+                                                  effective lead white</paraphrasis>
+                                                  <productOf thesu:phasesRef="1.10">
+                                                  <productType thesu:portion="true"/>
+                                                  </productOf>
+                                                  </object>
+                                                  </objectsGroup>
+                                                  <containsPurpose thesu:value="true"/>
+                                                  </phase>
+                                                  <phase>
+                                                  <microThemedFreeText>
+                                                  <freeText>Grind and sift what remains above the sieve of the solid substance {, repeat, and do it again a third and fourth time}</freeText>
+                                                  </microThemedFreeText>
+                                                  <phaseTemporality>
+                                                  <phaseRepetition thesu:repetitionsRange="4"/>
+                                                  </phaseTemporality>
+                                                  <objectsGroup>
+                                                  <object xml:id="tlg0656_tlg001.O213945">
+                                                  <objectRef thesu:ref="#tlg0656_tlg001.O213943"/>
+                                                  <paraphrasis>what remains, above the sieve, of the
+                                                  solid substance, after having been
+                                                  sifted</paraphrasis>
+                                                  <productOf thesu:phasesRef="1.10">
+                                                  <productType thesu:portion="true"/>
+                                                  </productOf>
+                                                  <objectFunction thesu:ingredient="true"/>
+                                                  </object>
+                                                  </objectsGroup>
+                                                  </phase>
+                                                  <phase>
+                                                  <microThemedFreeText>
+                                                  <freeText>The substances that are sifted away at each repeated grinding and sifting are progressively worse varieties of white and effective lead white</freeText>
+                                                  </microThemedFreeText>
+                                                  <objectsGroup>
+                                                  <object xml:id="tlg0656_tlg001.O213946">
+                                                  <microThemedFreeText>
+                                                  <freeText>progressively worse varieties of white and effective lead white</freeText>
+                                                  </microThemedFreeText>
+                                                  <paraphrasis>progressively worse varieties of
+                                                  white and effective lead white</paraphrasis>
+                                                  <relativeTo>
+                                                  <objectRef thesu:ref="#tlg0656_tlg001.O213944"/>
+                                                  </relativeTo>
+                                                  <productOf thesu:phasesRef="1.12">
+                                                  <productType thesu:portion="true"/>
+                                                  </productOf>
+                                                  </object>
+                                                  </objectsGroup>
+                                                  <containsPurpose thesu:value="true"/>
+                                                  </phase>
+                                                </newPhases>
+                                        </phasesGroup>
+                                </sequence>
+                        </sequencesGroup>
+                        <etiologiesGroup/>
+                        <analogiesGroup/>
+                </propositionType>
+                <paraphrasis>{1st Dioscorides recipe} To produce white and effective lead white in
+                        the best variety, as well as in worse varieties: .Pour most pungent vinegar
+                        into a jar, .Place a piece of lead on a lattice, .Lay the lattice with the
+                        lead onto the mouth of the jar, .Above, throw over covers, .Wait until the
+                        lead, crumbling down, has strained through the lattice, .Decant away the
+                        clean fluid that floats on top of the vinegar, .Pour the remaining viscous
+                        fluid into a vessel, .Let the viscous fluid dry under the sun, .Grind the
+                        dried substance, .Sift the ground substance, .The substance that is sifted
+                        away is the better variety of white and effective lead white, .Grind and
+                        sift what remains above the sieve of the solid substance {, repeat, and do
+                        it again a third and fourth time}, .The substances that are sifted away at
+                        each repeated grinding and sifting are progressively worse varieties of
+                        white and effective lead white</paraphrasis>
+        </PROPOSITION>
+        <PROPOSITION xml:id="w0007112.P664642">
+                <propositionType>
+                        <macroThemesGroup>
+                                <macroTheme
+                                        thesu:macroThemeTag="./meta/ancient-lead-white_JOHD_indexing-tags.xml#physical"
+                                />
+                        </macroThemesGroup>
+                        <microThemesGroup>
+                                <microTheme
+                                        thesu:microThemeTag="./meta/ancient-lead-white_JOHD_indexing-tags.xml#mineralogy"/>
+                                <microTheme
+                                        thesu:microThemeTag="./meta/ancient-lead-white_JOHD_indexing-tags.xml#medicine"
+                                />
+                        </microThemesGroup>
+                        <keywordsGroup>
+                                <keywordRef
+                                        thesu:namely="./meta/ancient-lead-white_JOHD_indexing-tags.xml#lead-white"
+                                        thesu:wordsInParaphrasis="1-2"/>
+                        </keywordsGroup>
+                        <definition/>
+                        <sequencesGroup/>
+                        <etiologiesGroup/>
+                        <analogiesGroup/>
+                </propositionType>
+                <paraphrasis>Lead white is a harmful substance</paraphrasis>
+        </PROPOSITION>
+        <PROPOSITION xml:id="w0007112.P664643">
+                <propositionType>
+                        <macroThemesGroup>
+                                <macroTheme
+                                        thesu:macroThemeTag="./meta/ancient-lead-white_JOHD_indexing-tags.xml#physical"
+                                />
+                        </macroThemesGroup>
+                        <microThemesGroup>
+                                <microTheme
+                                        thesu:microThemeTag="./meta/ancient-lead-white_JOHD_indexing-tags.xml#mineralogy"/>
+                                <microTheme
+                                        thesu:microThemeTag="./meta/ancient-lead-white_JOHD_indexing-tags.xml#chemistry"
+                                />
+                        </microThemesGroup>
+                        <keywordsGroup>
+                                <keywordRef
+                                        thesu:namely="./meta/ancient-lead-white_JOHD_indexing-tags.xml#lead-white"
+                                        thesu:wordsInParaphrasis="1-2"/>
+                                <keywordRef thesu:wordsInParaphrasis="5"
+                                        thesu:namely="./meta/ancient-lead-white_JOHD_indexing-tags.xml#cooling_a"
+                                />
+                        </keywordsGroup>
+                        <definition/>
+                        <sequencesGroup/>
+                        <etiologiesGroup/>
+                        <analogiesGroup/>
+                </propositionType>
+                <paraphrasis>Lead white is a cooling substance</paraphrasis>
+        </PROPOSITION>
+        <PROPOSITION xml:id="tlg0656_tlg001.P191034">
+                <propositionType>
+                        <macroThemesGroup>
+                                <macroTheme
+                                        thesu:macroThemeTag="./meta/ancient-lead-white_JOHD_indexing-tags.xml#physical"
+                                />
+                        </macroThemesGroup>
+                        <microThemesGroup>
+                                <microTheme
+                                        thesu:microThemeTag="./meta/ancient-lead-white_JOHD_indexing-tags.xml#chemistry"/>
+                                <microTheme
+                                        thesu:microThemeTag="./meta/ancient-lead-white_JOHD_indexing-tags.xml#metallurgy"
+                                        thesu:focus="2"/>
+                                <microTheme
+                                        thesu:microThemeTag="./meta/ancient-lead-white_JOHD_indexing-tags.xml#mineralogy"
+                                        thesu:focus="2"/>
+                        </microThemesGroup>
+                        <keywordsGroup>
+                                <keywordRef thesu:wordsInParaphrasis="1-2"
+                                        thesu:namely="./meta/ancient-lead-white_JOHD_indexing-tags.xml#lead-white"/>
+                                <keywordRef thesu:focus="2" thesu:wordsInParaphrasis="4"
+                                        thesu:namely="./meta/ancient-lead-white_JOHD_indexing-tags.xml#white"
+                                />
+                        </keywordsGroup>
+                        <definition/>
+                        <sequencesGroup/>
+                        <etiologiesGroup/>
+                        <analogiesGroup/>
+                </propositionType>
+                <paraphrasis>Lead white is white in colour</paraphrasis>
+        </PROPOSITION>
+</newPropositions>

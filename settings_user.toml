@@ -1,0 +1,212 @@
+# =============================================================================
+# Preset: Plutarch default test (DDHI-2024 JOHD dataset)
+# =============================================================================
+# Default for test runs. Copy to settings_user.toml to use.
+# Output: Plutarch_lead-white_test.* in _thesu_outputs/
+#
+# All settings you can change are in this file. You do NOT need to edit any
+# Python code.
+#
+# Sections: [paths], [filters], [output], [layout], [system], [colors]
+#
+# Editing tips:
+#   - Lines starting with # are comments (ignored). You can add your own.
+#   - Use true/false (lowercase) for on/off switches.
+#   - Use quotes for text: "my_value"
+#   - For lists, use square brackets: ["item1", "item2"]
+#   - Do not add trailing commas.
+#
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# PATHS — Where to find input files and where to save outputs
+# -----------------------------------------------------------------------------
+
+[paths]
+# Folder containing your XML and XSD files. Use "_thesu_inputs" for the default
+# folder next to the script, or type a full path like "C:/data/thesu_inputs".
+base_dir = "_thesu_inputs"
+
+# Folder where generated DOT, SVG, PDF, and PNG files are saved.
+# Use "_thesu_outputs" for the default folder next to the script.
+output_dir = "_thesu_outputs"
+
+# Name of the TheSu XML file to visualise, WITHOUT the .xml extension.
+# Example: "ancient_lead_white_Plut." loads ancient_lead_white_Plut.xml
+xml_name = "ancient-lead-white_JOHD"
+
+# Optional: base name for output files (DOT/SVG/PDF/PNG). If omitted, xml_name
+# is used. Here we give the Plutarch default test visualisation a clear name.
+output_basename = "Plutarch_lead-white_test"
+
+# -----------------------------------------------------------------------------
+# FILTERS — Which sources and elements to show or hide
+# -----------------------------------------------------------------------------
+
+[filters]
+# List of source IDs to include. Leave empty [] to include all sources.
+# Example IDs: "tlg0059_tlg020" (Plato), "tlg0093_tlg004" (Theophrastus),
+# "tlg0656_tlg001" (Dioscorides), "tlg0007_tlg112" (Plutarch),
+# "caley_richards_1956", "katsaros_liritzis_laskaris_2010"
+sources_to_select = ["tlg0007_tlg112"]
+
+# (a) Filter out all PROPOSITION elements
+filter_propositions = false
+
+# (b) Filter matchingPropositionSequence/Phases and sequences in PROPOSITIONs
+filter_matching_proposition_sequences = false
+
+# (c) Filter out any sequence elements (false = show Plutarch + Theophrastus recipe sequences)
+filter_all_sequences = false
+
+# (d) Filter out any element with extrinsic = true
+filter_extrinsic_elements = true
+
+# Focus on specific THESIS IDs only. All siblings of these theses are removed.
+# Leave empty [] to show everything. Example: ["katsaros_liritzis_laskaris_2010.T124253"]
+thesis_focus_id = []
+
+# Element IDs to exclude (THESIS/SUPPORT). Shown as **(e) Exclude Elements** in the Active Filters box.
+elements_to_exclude = [
+  "tlg0007_tlg112.T190127", "tlg0007_tlg112.T185715", "tlg0007_tlg112.T184712",
+  "tlg0007_tlg112.S184328", "tlg0007_tlg112.T174946", "tlg0007_tlg112.T152959",
+  "tlg0007_tlg112.T174153", "tlg0007_tlg112.T175820", "tlg0007_tlg112.T181116",
+  "tlg0007_tlg112.S144521", "tlg0007_tlg112.S181621", "tlg0007_tlg112.S182325",
+  "tlg0007_tlg112.S190452", "tlg0007_tlg112.S191342", "tlg0007_tlg112.T181906",
+  "tlg0007_tlg112.T150609", "tlg0007_tlg112.T151258", "tlg0007_tlg112.S152106",
+  "tlg0007_tlg112.S202335"
+]
+
+# -----------------------------------------------------------------------------
+# Custom Proposition Filters
+# -----------------------------------------------------------------------------
+# Map proposition IDs to thesis IDs. Matching propositions and their sequences
+# are filtered out. Proposition IDs can optionally start with # (they are
+# normalised automatically). Shown as **(f) Exclude Propositions (by thesis)** in the Active Filters box.
+# Format: each key is a proposition ID, value is a list of thesis IDs.
+# Example: "tlg0093_tlg004.P151115" = ["tlg0007_tlg112.T141553"]
+# With Plutarch-only source, only tlg0007_tlg112.T141553 is shown; other thesis IDs
+# (Theophrastus, Dioscorides, Caley-Richards, KLL) are redundant as those sources are removed.
+# Exclude Dioscorides recipe (P213927) and "Lead white is a cooling substance" (P664643).
+
+[filters.custom_propositions]
+"tlg0656_tlg001.P213927" = ["tlg0007_tlg112.T141553"]
+"w0007112.P664643" = ["tlg0007_tlg112.T145739"]
+
+# -----------------------------------------------------------------------------
+# Custom Sequence/Phase Filters
+# -----------------------------------------------------------------------------
+# Map sequence IDs to thesis IDs. Filters matchingPropositionSequence and
+# related matchingPropositionPhases (does NOT remove the matchingProposition).
+# Sequence IDs can optionally start with #. Shown as **(g) Exclude Sequences (by thesis)** in the Active Filters box.
+
+[filters.custom_sequences]
+# Add mappings here. Leave section empty for none.
+
+# -----------------------------------------------------------------------------
+# LAYOUT — GraphViz engine and visual tuning
+# -----------------------------------------------------------------------------
+
+[layout]
+# Which layout engine to use:
+#   - "dot"   = Hierarchical, best for argument analysis and flowcharts
+#   - "fdp"   = Force-directed, good for complex networks
+#   - "neato" = Spring model, good for recipe comparison and clustering
+default_engine = "dot"
+
+# -----------------------------------------------------------------------------
+# OUTPUT — PDF and PNG export settings
+# -----------------------------------------------------------------------------
+
+[output]
+# Which formats to export. Set to false to skip generating that file type.
+output_svg = true
+output_pdf = true
+output_png = true
+# Open the generated SVG in your default web browser after export.
+# Set to false to disable automatic visualisation.
+open_in_browser = true
+
+[output.pdf]
+# Page size in inches (width, height). "11.7,16.5" = A3 portrait.
+size = "11.7,16.5"
+# Resolution for PDF export. Higher = sharper, larger file.
+dpi = 300
+
+[output.png]
+# Page size in inches (width, height). "11.7,16.5" = A3 portrait.
+size = "11.7,16.5"
+# Resolution for PNG export. Higher = sharper, larger file. Reduce if PNG files are too big.
+dpi = 1400
+# Warn when generated PNG exceeds this size (MB). Set to 0 to disable.
+max_warning_mb = 20
+
+# -----------------------------------------------------------------------------
+# SYSTEM — Machine-specific paths
+# -----------------------------------------------------------------------------
+
+[system]
+# Path to the Graphviz bin folder (where dot.exe lives). Leave empty "" to use
+# whatever is on system PATH. Set to a path (e.g. "C:/Program Files (x86)/Graphviz/bin")
+# to force that installation.
+graphviz_path = ""
+
+# -----------------------------------------------------------------------------
+# COLORS — Advanced: remap internal color names to GraphViz colors
+# -----------------------------------------------------------------------------
+# Used when converting hex colors to names. Change values to alter the visual theme.
+
+[colors]
+darkgray = "tan"
+silver = "darkseagreen"
+lightslategray = "darkolivegreen"
+cornflowerblue = "steelblue"
+lavender = "lightsteelblue"
+gainsboro = "mediumaquamarine"
+lightgray = "mediumaquamarine"
+lightgrey = "mediumaquamarine"
+honeydew = "palegreen"
+
+# --- DOT engine settings (hierarchical layout) ---
+# Best for: directed graphs, flowcharts, hierarchies.
+# Increase nodesep for more horizontal space; ranksep for more vertical space.
+
+[layout.dot]
+overlap = "scalexy"       # Overlap removal: prism, scale, scalexy, compress, false
+splines = "ortho"         # Edge style: ortho, line, polyline, curved, spline
+nodesep = 0.25            # Horizontal spacing between nodes (inches). Try 0.5–2.0 for more space
+ranksep = 0.30            # Vertical spacing between ranks (inches). Try 0.75–2.5 for more space
+outputorder = "edgesfirst" # Draw order: edgesfirst, nodesfirst
+concentrate = "false"      # Merge common edges: true, false
+newrank = "true"          # Allow tighter vertical packing
+
+# --- FDP engine settings (force-directed layout) ---
+# Best for: complex argument networks with many cross-connections.
+# Increase K for stronger repulsion; increase sep for more separation.
+
+[layout.fdp]
+overlap = "prism"
+splines = "spline"
+nodesep = 0.10
+outputorder = "edgesfirst"
+concentrate = "true"
+K = 0.5                   # Spring constant (higher = more repulsion). Try 3.0–5.0 to spread nodes
+sep = 0.2                 # Node separation factor. Try 0.8–1.2 for more space
+maxiter = 2000            # Max iterations. Try 1000–2000 for dense graphs
+start = "regular"         # Initial positions: regular (grid), self
+
+# --- NEATO engine settings (spring model) ---
+# Best for: undirected graphs, clustering, recipe comparison.
+# Decrease sep and K to pull nodes closer; increase maxiter for refinement.
+
+[layout.neato]
+overlap = "prism"
+splines = "spline"
+nodesep = 0.1
+outputorder = "edgesfirst"
+concentrate = "true"
+K = 0.3                   # Optimal distance. Lower = closer nodes (e.g. 0.3–0.8)
+sep = 0.05                 # Separation factor. Lower = closer (e.g. 0.05–0.5)
+maxiter = 1500
+mode = "major"            # Layout algorithm: major, KK, sgd
+model = "circuit"         # Model: shortpath, circuit, subset
