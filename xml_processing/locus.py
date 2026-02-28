@@ -12,7 +12,7 @@ def get_first_non_empty_locus(retrieved_texts_and_loci):
             return locus
     return ""
 
-def check_for_standardized_page_id(element, xml, namespaces):
+def check_for_standardized_page_id(element, namespaces):
     """
     Check for standardized page IDs in the element's ancestors.
     
@@ -129,7 +129,7 @@ def retrieve_locus(element, xml, namespaces):
     # For HTML/XHTML documents, use page ID approach
     if not is_tei_document:
         # First check for standardized page IDs from OCR/Poppler
-        page_id = check_for_standardized_page_id(element, xml, namespaces)
+        page_id = check_for_standardized_page_id(element, namespaces)
         if page_id:
             return f'p. {page_id}'
     
@@ -183,7 +183,7 @@ def retrieve_locus(element, xml, namespaces):
     # If we still haven't found a locus and this is not a TEI document, 
     # try the page ID approach as a fallback
     if not is_tei_document and not page_id:
-        page_id = check_for_standardized_page_id(element, xml, namespaces)
+        page_id = check_for_standardized_page_id(element, namespaces)
         if page_id:
             return f'p. {page_id}'
     

@@ -176,6 +176,6 @@ def process_filtered_elements(source_xml, filtered_elements, namespaces, all_pro
             written_lines, processed_propositions = process_support_element(element, element_type, namespaces, dot_file, written_lines, retrieved_text, retrieved_text_snippet, locus, processed_propositions, actual_source_id)
         elif element.tag == '{http://alchemeast.eu/thesu/ns/1.0}MISC':
             element_type = "MISC"
-            written_lines, processed_propositions = process_misc_element(element, element_type, namespaces, dot_file, written_lines, written_prop_phases, retrieved_text, retrieved_text_snippet, locus, processed_propositions, actual_source_id)
+            written_lines, processed_propositions = process_misc_element(element, namespaces, dot_file, written_lines, retrieved_text, retrieved_text_snippet, locus, processed_propositions, actual_source_id)
     
     return written_lines, stored_edges, processed_propositions

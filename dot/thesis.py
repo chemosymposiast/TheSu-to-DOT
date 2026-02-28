@@ -18,7 +18,7 @@ from dot.pseudo_nodes import (
 )
 from dot.propositions import get_proposition_sequences, process_proposition_sequences, parse_phases_ref
 
-def get_thesis_entailments(element, namespaces, element_id):
+def get_thesis_entailments(element, namespaces):
     """Extract entailment references from a THESIS element. Returns {entailed_by_ref: entailed_as}."""
     entailments_dict = {}
     entailments_group = element.find('./thesu:entailment', namespaces=namespaces)
@@ -105,7 +105,7 @@ def get_thesis_etiologies(element, namespaces, element_id):
                 
     return etiologies_dict
 
-def get_thesis_analogies(element, namespaces, element_id):
+def get_thesis_analogies(element, namespaces):
     """
     Extract analogy members from a THESIS element.
     
@@ -136,7 +136,7 @@ def get_thesis_analogies(element, namespaces, element_id):
                 
     return analogies_dict
 
-def get_thesis_references(element, namespaces, element_id):
+def get_thesis_references(element, namespaces):
     """
     Extract references from THESIS elements that are:
     1. Children of an 'includedRef' element (descendant of THESIS)
@@ -172,7 +172,7 @@ def get_thesis_references(element, namespaces, element_id):
     
     return references_dict
 
-def get_thesis_matching_propositions(element, namespaces, element_id):
+def get_thesis_matching_propositions(element, namespaces):
     """Extract matching proposition references and their types from a THESIS element."""
     matching_propositions_dict = {}
     matching_propositions_group = element.find('./thesu:matchingPropositionsGroup', namespaces=namespaces)
@@ -206,7 +206,7 @@ def get_thesis_matching_propositions(element, namespaces, element_id):
 
 def process_matching_propositions(element, element_id, namespaces, all_propositions, dot_file, written_lines, stored_edges, written_prop_phases, processed_propositions):
     """Process matching propositions: create nodes, pseudo-nodes, and store edges for later writing."""
-    matching_propositions_dict = get_thesis_matching_propositions(element, namespaces, element_id)
+    matching_propositions_dict = get_thesis_matching_propositions(element, namespaces)
 
     if matching_propositions_dict:
         for prop_ref in matching_propositions_dict:
@@ -233,7 +233,7 @@ def process_matching_propositions(element, element_id, namespaces, all_propositi
                     written_lines.append(node_line)  
 
                     # Iterate through the PROPOSITION's sequences
-                    sequences_dict = get_proposition_sequences(proposition_element, namespaces, prop_id, written_prop_phases)
+                    sequences_dict = get_proposition_sequences(proposition_element, namespaces, prop_id)
                     if sequences_dict:
                         written_lines = process_proposition_sequences(sequences_dict, prop_id, dot_file, written_lines, written_prop_phases)
                         
@@ -256,7 +256,7 @@ def process_matching_propositions(element, element_id, namespaces, all_propositi
 
     return written_lines, processed_propositions
 
-def get_thesis_sequences(element, namespaces, element_id, written_prop_phases):
+def get_thesis_sequences(element, namespaces, element_id):
     """Extract thesis sequences and phases from thesu:thesisType/thesu:sequencesGroup into a structured dict.
 
     Reads from the first thesu:sequence that does not contain thesu:maySubstitute.
@@ -374,7 +374,7 @@ def get_thesis_sequences(element, namespaces, element_id, written_prop_phases):
 
 def process_thesis_sequences(element, element_id, namespaces, dot_file, written_lines, all_propositions, written_prop_phases, implicit, color_fill, color_peripheries, style, filter_propositions, filter_matching_proposition_sequences):
     """Process thesis sequences: write phase nodes, clusters, and edges to the DOT file."""
-    sequences_dict = get_thesis_sequences(element, namespaces, element_id, written_prop_phases)
+    sequences_dict = get_thesis_sequences(element, namespaces, element_id)
     if sequences_dict:
         unique_sequence_ids = set([value['sequence_id'] for value in sequences_dict.values()])
 
@@ -573,7 +573,6 @@ def process_matching_prop_sequences(element, namespaces, all_propositions, seque
                                 written_lines = draw_edges_with_prop_sequences(
                                     {phase_data['phase_absolute_number']: phase_data_copy}, 
                                     matching_prop_phases, 
-                                    matching_sequence_id, 
                                     cluster_id, 
                                     prop_cluster_id, 
                                     first_phase_id, 
@@ -591,7 +590,7 @@ def process_matching_prop_sequences(element, namespaces, all_propositions, seque
     
     return written_lines
 
-def draw_edges_with_prop_sequences(sequence_dict_filtered, written_prop_phases, matching_sequence_id, cluster_id, prop_cluster_id, first_phase_id, first_prop_phase_id, written_lines, dot_file):
+def draw_edges_with_prop_sequences(sequence_dict_filtered, written_prop_phases, cluster_id, prop_cluster_id, first_phase_id, first_prop_phase_id, written_lines, dot_file):
     """Draw invisible edges connecting thesis phases to matching proposition phases."""
     # Use a counter to ensure unique pseudo-node IDs even across different sequence matches
     node_counter = 1
@@ -705,9 +704,9 @@ def draw_edges_with_prop_sequences(sequence_dict_filtered, written_prop_phases, 
 def write_thesis_and_process_included_elements(element, element_id, element_type, element_speaker, paraphrasis, namespaces, dot_file, written_lines, retrieved_text, retrieved_text_snippet, locus, processed_propositions, source_id=None):
     """Write the thesis node and process all included elements (entailments, analogies, references, sequences)."""
     # Get both entailments and analogies
-    entailments_dict = get_thesis_entailments(element, namespaces, element_id)
+    entailments_dict = get_thesis_entailments(element, namespaces)
     etiologies_dict = get_thesis_etiologies(element, namespaces, element_id)
-    analogies_dict = get_thesis_analogies(element, namespaces, element_id)
+    analogies_dict = get_thesis_analogies(element, namespaces)
     
     # Checks for attributes and color
     extrinsic_att = element.get('{http://alchemeast.eu/thesu/ns/1.0}extrinsic')
@@ -893,7 +892,7 @@ def write_thesis_and_process_included_elements(element, element_id, element_type
             written_lines.append(line_to_write)
 
     # Process references if present
-    references_dict = get_thesis_references(element, namespaces, element_id)
+    references_dict = get_thesis_references(element, namespaces)
     if references_dict:
         for referenced_id, ref_source in references_dict.items():
             # Create a pseudo-node with its own ID

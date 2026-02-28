@@ -39,9 +39,9 @@ def get_function_and_aim(support_element, namespaces):
 
     return function, aim
 
-def process_support_targets(element, function, implicit_att, implicit_style, function_attributes,
+def process_support_targets(element, function, implicit_style, function_attributes,
                            t_gephi_label, support_fill, support_border, support_style,
-                           t_fill, t_border, t_shape,
+                           t_border,
                            namespaces, dot_file, written_lines, element_id, processed_propositions, source_id=None):
     """
     Process all the targets referred to by a SUPPORT.
@@ -68,7 +68,7 @@ def process_support_targets(element, function, implicit_att, implicit_style, fun
     # 2. Process omitted targets
     func_node_id, processed_propositions = process_omitted_targets(
         element, element_id, function, t_gephi_label, support_fill, support_border, 
-        support_style, t_fill, t_border, t_shape, implicit_att, implicit_style, 
+        support_style, t_border, implicit_style, 
         function_attributes, namespaces, dot_file, written_lines, func_node_id, processed_propositions, source_id
     )
     
@@ -122,7 +122,7 @@ def process_explicit_targets(element, element_id, function, t_gephi_label,
 
 def process_omitted_targets(element, element_id, function, t_gephi_label, 
                            support_fill, support_border, support_style, 
-                           t_fill, t_border, t_shape, implicit_att, implicit_style,
+                           t_border, implicit_style,
                            function_attributes, namespaces, dot_file, 
                            written_lines, func_node_id, processed_propositions, source_id=None):
     """
@@ -631,9 +631,9 @@ def process_support_element(element, element_type, namespaces, dot_file, written
     # --- Process targets and employed elements using the specialized functions ---
     
     result = process_support_targets(
-        element, function, implicit_att, implicit_style, function_attributes,
+        element, function, implicit_style, function_attributes,
         t_gephi_label, support_fill, support_border, support_style,
-        t_fill, t_border, t_shape,  # <-- Pass explicit target styling with correct t_border
+        t_border,
         namespaces, dot_file, written_lines, element_id, processed_propositions, source_id
     )
 

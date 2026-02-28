@@ -103,7 +103,7 @@ def create_gephi_dot(dot_filename, gephi_dot_filename):
     # Process the DOT content to simplify and optimize - phases are already processed
     # We pass empty phase_to_cluster and cluster_parents since phases are already handled
     processed_lines, _ = process_gephi_dot_content(
-        dot_content, {}, {},  # Empty phase dictionaries
+        dot_content,
         matching_nodes, employed_nodes, function_nodes, 
         entailment_nodes, analogy_nodes, reference_nodes, etiology_nodes
     )
@@ -113,7 +113,7 @@ def create_gephi_dot(dot_filename, gephi_dot_filename):
 
     # Write the processed DOT content to the Gephi DOT file
     # No need to pass new_phase_edges since they're already in the dot_content
-    write_gephi_dot_file(gephi_dot_filename, processed_lines, [], direct_edges)
+    write_gephi_dot_file(gephi_dot_filename, processed_lines, direct_edges)
     
     # Clean up temporary file
     import os

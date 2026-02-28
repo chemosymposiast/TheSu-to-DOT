@@ -6,7 +6,7 @@ from bootstrap.primary_imports import re
 from xml_processing.extractors import extract_paraphrasis_text
 from utils.text import pad_short_string
 
-def process_misc_element(element, element_type, namespaces, dot_file, written_lines, written_prop_phases, retrieved_text, retrieved_text_snippet, locus, processed_propositions, source_id=None):
+def process_misc_element(element, namespaces, dot_file, written_lines, retrieved_text, retrieved_text_snippet, locus, processed_propositions, source_id=None):
     """Process a MISC element: write its DOT node with speaker, locus, paraphrasis, and styling."""
     element_id = element.get('{http://alchemeast.eu/thesu/ns/1.0}id')
     if element_id is None:

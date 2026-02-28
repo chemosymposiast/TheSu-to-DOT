@@ -223,7 +223,7 @@ def create_dot(xml_filename, dot_filename, sources_to_select=sources_to_select,
             write_dot_file_header(dot_file) 
 
             elements = xml_root.xpath('.//thesu:AEsystem/*', namespaces=namespaces)
-            filtered_elements = filter_elements(elements, namespaces) 
+            filtered_elements = filter_elements(elements) 
 
             written_lines, stored_edges, written_prop_phases, processed_elements, processed_propositions = initialize_elements_clusters(xml_root, filtered_elements, namespaces, all_propositions, dot_file)
             

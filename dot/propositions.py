@@ -29,13 +29,13 @@ def process_referenced_propositions(filtered_elements, namespaces, all_propositi
             written_lines.append(node_line)
             
             # Process the sequences of the proposition
-            sequences_dict = get_proposition_sequences(proposition_element, namespaces, prop_id, written_prop_phases)
+            sequences_dict = get_proposition_sequences(proposition_element, namespaces, prop_id)
             if sequences_dict:
                 written_lines = process_proposition_sequences(sequences_dict, prop_id, dot_file, written_lines, written_prop_phases)
     
     return written_lines, written_prop_phases, processed_propositions
 
-def get_proposition_sequences(element, namespaces, element_id, written_prop_phases):
+def get_proposition_sequences(element, namespaces, element_id):
     """Extract proposition sequences and phases from an element into a structured dict."""
     sequences_dict = {}
     sequences_group = element.find('.//thesu:propositionType/thesu:sequencesGroup', namespaces=namespaces)

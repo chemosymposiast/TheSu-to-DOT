@@ -17,7 +17,7 @@ def get_all_proposition_ids(elements, namespaces):
                 proposition_ids.add(prop_ref)
     return proposition_ids
 
-def filter_elements(elements, namespaces):
+def filter_elements(elements):
     """Return only THESIS, SUPPORT, and MISC elements from the given list."""
     return [element for element in elements if element.tag in ('{http://alchemeast.eu/thesu/ns/1.0}THESIS', '{http://alchemeast.eu/thesu/ns/1.0}SUPPORT', '{http://alchemeast.eu/thesu/ns/1.0}MISC')]
 

@@ -4,7 +4,7 @@ DOT content processing for Gephi transformation.
 import re
 from .colors import hex_to_closest_color
 
-def process_gephi_dot_content(dot_content, phase_to_cluster, cluster_parents, 
+def process_gephi_dot_content(dot_content, 
                              matching_nodes, employed_nodes, function_nodes, 
                              entailment_nodes, analogy_nodes, reference_nodes, etiology_nodes):
     """

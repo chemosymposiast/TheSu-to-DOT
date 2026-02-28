@@ -1,7 +1,7 @@
 """
 File I/O functions for Gephi DOT files.
 """
-def write_gephi_dot_file(gephi_dot_filename, processed_lines, new_phase_edges, direct_edges):
+def write_gephi_dot_file(gephi_dot_filename, processed_lines, direct_edges):
     """
     Write the final Gephi DOT file with all modifications.
     Ensures all new edges are inserted at the end of the graph before the final closing brace.
