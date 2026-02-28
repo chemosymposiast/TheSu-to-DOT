@@ -63,8 +63,6 @@ Every run produces both a GraphViz DOT file (for SVG/PDF/PNG) and a `*_gephi.dot
 - `gephi/` — Gephi DOT conversion
 - `render/` — SVG/PDF/PNG export
 
-See `TheSu-to-DOT_outline.md` for the full module map.
-
 ## License
 
 [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/) — see [LICENSE](LICENSE).
