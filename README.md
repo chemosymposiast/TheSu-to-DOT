@@ -2,7 +2,7 @@
 
 Converts *TheSu* XML documents into graph visualisations (DOT, SVG, PDF, PNG, and a Gephi import version). Configurable filters by source, proposition, sequence, thesis focus, etc.
 
-*TheSu*-to-DOT is part of the wider ***TheSu* XML** project, defines a stand-off XML schema for modelling ideas, arguments, and their discursive contexts in historical texts. For an overview of the schema, examples, and documentation, see the project website at `https://thesu.io`.
+*TheSu*-to-DOT is part of the wider ***TheSu* XML** project, which offers a stand-off XML schema for modelling ideas, arguments, and their discursive contexts in historical texts. For an overview of the schema, examples, and documentation, see the project website at [thesu.io](https://thesu.io).
 
 The `_config_presets/` folder contains ready-to-use configurations that reproduce each figure from the JOHD lead-white dataset. For dataset context, provenance, and step-by-step reproduction instructions, see [JOHD_dataset_reproduction.md](JOHD_dataset_reproduction.md).
 

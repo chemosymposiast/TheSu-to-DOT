@@ -8,7 +8,7 @@ Each visualisation of the JOHD lead white dataset (on which see below) can be re
 
 The dataset referenced in this guide is the one attached to the paper **Lead White in Context Across Greco-Roman Sources: The First *TheSu* XML Annotation Dataset of Arguments and Recipes, with Graph Visualisations and Discussion of their Design** (Daniele Morrone). Full submission June 2025; under peer review.
 
-For background on the TheSu XML schema itself, including its treatment of theses, supports, propositions, and sequences, see the project website at `https://thesu.io` (especially the **About**, **Documentation**, and **Visualisations** sections).
+For background on the *TheSu* XML schema itself, including its treatment of theses, supports, propositions, and sequences, see the project website at [thesu.io](https://thesu.io) (especially the **About**, **Documentation**, and **Visualisations** pages).
 
 - **Visualisations production dates:** 11–13 June 2025  
 - ***TheSu* XML source:** last edited 9 June 2025  
