@@ -17,6 +17,7 @@ _thesu_outputs/*
 !_thesu_outputs/.gitkeep
 bootstrap/.thesu_runtime_state.json
 visualisation-script/
+thesu_outputs/
 
 # Testing
 .pytest_cache/
