@@ -1,5 +1,7 @@
 # *TheSu*-to-DOT
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19614479.svg)](https://doi.org/10.5281/zenodo.19614479)
+
 Converts *TheSu* XML documents into graph visualisations (DOT, SVG, PDF, PNG, and a Gephi import version). Configurable filters by source, proposition, sequence, thesis focus, etc.
 
 *TheSu*-to-DOT is part of the wider ***TheSu* XML** project, which offers a stand-off XML schema for modelling ideas, arguments, and their discursive contexts in historical texts. For an overview of the schema, examples, and documentation, see the project website at [thesu.io](https://thesu.io).
@@ -67,6 +69,31 @@ Every run produces both a GraphViz DOT file (for SVG/PDF/PNG) and a `*_gephi.dot
 - `gephi/` — Gephi DOT conversion
 - `render/` — SVG/PDF/PNG export
 
+## Citations
+
+If you use *TheSu*-to-DOT in research, please cite the software and, where relevant, the associated dataset and data paper.
+
+* **Software (*TheSu*-to-DOT)**
+  Morrone, Daniele. 2026. "chemosymposiast/*TheSu*-to-DOT: v1.0.0 – First release (v1.0.0)". *Zenodo*. [https://doi.org/10.5281/zenodo.19613192](https://doi.org/10.5281/zenodo.19613192)
+
+  ```
+  Morrone, Daniele. 2026. "chemosymposiast/TheSu-to-DOT: v1.0.0 – First release (v1.0.0)". Zenodo. https://doi.org/10.5281/zenodo.19613192
+  ```
+
+* **Dataset (JOHD lead-white dataset)**
+  Morrone, Daniele. 2026. "chemosymposiast/lead-white_JOHD: v1.0.0 – First Public Release (v1.0.0)". *Zenodo*. [https://doi.org/10.5281/zenodo.19614479](https://doi.org/10.5281/zenodo.19614479)
+
+  ```
+  Morrone, Daniele. 2026. "chemosymposiast/lead-white_JOHD: v1.0.0 – First Public Release (v1.0.0)". Zenodo. https://doi.org/10.5281/zenodo.19614479
+  ```
+
+* **Data paper (preprint)**
+  Morrone, Daniele. 2025. "Lead White in Context Across Greco-Roman Sources: The First *TheSu* XML Annotation Dataset of Arguments and Recipes, with Graph Visualisations and Discussion of their Design". Preprint (first submitted June 2025).
+
+  ```
+  Morrone, Daniele. 2025. "Lead White in Context Across Greco-Roman Sources: The First TheSu XML Annotation Dataset of Arguments and Recipes, with Graph Visualisations and Discussion of their Design". Preprint (first submitted June 2025).
+  ```
+  
 ## License
 
 [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/) — see [LICENSE](LICENSE).
