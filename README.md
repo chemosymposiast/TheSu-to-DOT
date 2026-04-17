@@ -1,6 +1,6 @@
 # *TheSu*-to-DOT
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19614479.svg)](https://doi.org/10.5281/zenodo.19614479)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19613192.svg)](https://doi.org/10.5281/zenodo.19613192)
 
 Converts *TheSu* XML documents into graph visualisations (DOT, SVG, PDF, PNG, and a Gephi import version). Configurable filters by source, proposition, sequence, thesis focus, etc.
 
