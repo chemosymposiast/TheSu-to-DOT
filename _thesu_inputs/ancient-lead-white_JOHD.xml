@@ -2486,7 +2486,7 @@
                     thesu:digitalEdition="https://github.com/OpenGreekAndLatin/First1KGreek/blob/eb81494731fd632f582c4b94634127bdbd596b43/data/tlg0093/tlg004/tlg0093.tlg004.1st1K-grc1.xml"
                     xml:id="Wimmer1862"/>
                 <bibliographyRef thesu:completeEdition="true" thesu:translation="true"
-                    thesu:ref="./meta/ancient-lead-white_JOHD_bibliography.xml#Caley_Richards1956"/>
+                    thesu:ref="./meta/ancient-lead-white_JOHD_bibliography.xml#Caley1956"/>
                 <bibliographyRef thesu:completeEdition="true" thesu:translation="true"
                     thesu:ref="./meta/ancient-lead-white_JOHD_bibliography.xml#Eichholz1965"
                     xml:id="Eichholz1965"/>
@@ -3731,7 +3731,7 @@
             </SUPPORT>
         </AEsystem>
     </source>
-    <source xml:id="tlg0656_tlg001" thesu:ref="./tlg0656.tlg001.1st1K-grc1.xml">
+    <source xml:id="tlg0656_tlg001" thesu:ref="./sources-segmented/tlg0656.tlg001.1st1K-grc1.xml">
         <sourceInfo>
             <title thesu:string="De materia medica" thesu:original="false"/>
             <title thesu:string="Περὶ ὕλης ἰατρικῆς"/>
@@ -3747,6 +3747,9 @@
                     xml:id="Wellmann1906"
                     thesu:digitalEdition="https://github.com/OpenGreekAndLatin/First1KGreek/blob/eb81494731fd632f582c4b94634127bdbd596b43/data/tlg0656/tlg001/tlg0656.tlg001.1st1K-grc1.xml"
                 />
+                <bibliographyRef
+                    thesu:ref="./meta/ancient-lead-white_JOHD_bibliography.xml#Kunzelman2008"
+                    xml:id="Kunzelman2008"/>
             </bibliography>
         </sourceInfo>
         <AEsystem>
@@ -4524,7 +4527,7 @@
                         thesu:specified="true" thesu:generalized="true" thesu:altered="true"/>
                 </matchingPropositionsGroup>
                 <speakersGroup>
-                    <speaker thesu:name="./meta/ancient_lead_white.xml#Dioscorides-Pedanius"/>
+                    <speaker thesu:name="./meta/ancient-lead-white_JOHD_people.xml#Dioscorides-Pedanius"/>
                 </speakersGroup>
                 <assent>
                     <assentSpeaker>
@@ -6389,7 +6392,7 @@
                     />
                 </supportType>
                 <employedElements>
-                    <elementRef thesu:ref="tlg0656_tlg001.T214145"/>
+                    <elementRef thesu:ref="#tlg0656_tlg001.T214145"/>
                 </employedElements>
                 <text>
                     <textRef>
@@ -8083,7 +8086,7 @@
             </THESIS>
         </AEsystem>
     </source>
-    <source xml:id="tlg0007_tlg112" thesu:ref="./tlg0007.tlg112.perseus-grc2.xml">
+    <source xml:id="tlg0007_tlg112" thesu:ref="./sources-segmented/tlg0007.tlg112.perseus-grc2.xml">
         <sourceInfo>
             <title thesu:string="Quaestiones convivales" thesu:original="false"/>
             <title thesu:string="Συμποσιακῶν προβλημάτων βιβλία"/>
@@ -10261,7 +10264,7 @@
                         </supportFunctionsGroup>
                     </supportFunction>
                     <supportForm
-                        thesu:formTag="./meta/ancient-lead-white_JOHD_relationships-tags.xml#cause-to-effect"
+                        thesu:formTag="./meta/ancient-lead-white_JOHD_relationships-tags.xml#from-cause-to-effect"
                     />
                 </supportType>
                 <employedElements>
@@ -11491,7 +11494,7 @@
         </AEsystem>
     </source>
     <source xml:id="katsaros_liritzis_laskaris_2010"
-        thesu:ref="./today_katsaros,liritzis,laskaris_2010.xhtml">
+        thesu:ref="./sources-segmented/today_katsaros,liritzis,laskaris_2010.xhtml">
         <sourceInfo>
             <title
                 thesu:string="Identification of Theophrastus’ Pigments Egyptios Kyanos and Psimythion from Archaeological Excavations. A Case Study"/>
@@ -11655,7 +11658,7 @@
                         <keywordRef thesu:focus="3"
                             thesu:ref="#katsaros_liritzis_laskaris_2010.K202408"/>
                         <keywordRef thesu:focus="3"
-                            thesu:ref="#katsaros_liritzis_laskaris_2010._202446"/>
+                            thesu:ref="#katsaros_liritzis_laskaris_2010.K202446"/>
                     </keywordsGroup>
                     <definition/>
                     <sequencesGroup/>
@@ -12294,7 +12297,7 @@
                 </text>
                 <microThemesGroup>
                     <microTheme
-                        thesu:microThemeTag="./meta/ancient-lead-white_JOHD_indexing-tags.xml#chemsitry"
+                        thesu:microThemeTag="./meta/ancient-lead-white_JOHD_indexing-tags.xml#chemistry"
                     />
                 </microThemesGroup>
             </keyword>
@@ -12811,7 +12814,7 @@
                                             </object>
                                             <object xml:id="katsaros_liritzis_laskaris_2010.O160922">
                                                 <objectRef
-                                                  thesu:ref="#katsaros_liritzis_laskaris_2010._160743"
+                                                  thesu:ref="#katsaros_liritzis_laskaris_2010.O160743"
                                                 />
                                             </object>
                                         </objectsGroup>
