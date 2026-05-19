@@ -1,6 +1,6 @@
 # *TheSu*-to-DOT
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19613191.svg)](https://doi.org/10.5281/zenodo.20290594)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20290594.svg)](https://doi.org/10.5281/zenodo.20290594)
 
 https://doi.org/10.5281/zenodo.19613191
 
