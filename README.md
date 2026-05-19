@@ -2,8 +2,6 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20290594.svg)](https://doi.org/10.5281/zenodo.20290594)
 
-https://doi.org/10.5281/zenodo.19613191
-
 Converts *TheSu* XML documents into graph visualisations (DOT, SVG, PDF, PNG, and a Gephi import version). Configurable filters by source, proposition, sequence, thesis focus, etc.
 
 *TheSu*-to-DOT is part of the wider ***TheSu* XML** project, which offers a stand-off XML schema for modelling ideas, arguments, and their discursive contexts in historical texts. For an overview of the schema, examples, and documentation, see the project website at [thesu.io](https://thesu.io).
